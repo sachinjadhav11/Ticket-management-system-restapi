@@ -41,10 +41,10 @@ public class EmployeeController
 		}
 	
 	@PostMapping("/employee")
-	public void addEmployee(@RequestBody Employee employee)
+	public Employee addEmployee(@RequestBody Employee employee)
 	{
 		employeeService.addEmployee(employee);
-		//return "employee";
+		return employee;
 	}
 	
 	@DeleteMapping("/employee/{employee_id}")
@@ -59,4 +59,6 @@ public class EmployeeController
 	   {
 		 employeeService.updateEmployee(employee);
 	   }
+	
+	
 }

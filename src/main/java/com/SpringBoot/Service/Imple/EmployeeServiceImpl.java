@@ -47,11 +47,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	public Employee getEmployeeById(Integer employee_id)
 	{
 		return employeeRepository.findById(employee_id)
-				.orElseThrow(()-> new IllegalStateException("Employee not found with id "+employee_id));
-				
-		
-		 
+				.orElseThrow(()-> new IllegalStateException("Employee not found with id "+employee_id));		 
 	}
-
 
 }

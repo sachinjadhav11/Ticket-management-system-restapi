@@ -9,6 +9,7 @@ import com.SpringBoot.model.UpdateTicketRequestModel;
 
 public interface TicketService 
 {
+	
   public List<Ticket > getAllTickets();
   
   public void addTicket(TicketRequestModel  ticket_id);
